@@ -37,12 +37,12 @@ public class KEM {
     }
 
     public static Encapsulation crypto_kem_encap(final byte[] pk){
-        byte[] ctxt = new byte[CIPHERTEXT_BYTES];
-        byte[] ss = new byte[CRYPTO_BYTES];
+        byte[] ctxt;
+        byte[] ss;
 
 
         byte[] mu = new byte[DELTA_BYTES];
-        byte[] buf = new byte[DELTA_BYTES + CRYPTO_BYTES];
+        byte[] buf;
         byte[] buf2 = new byte[DELTA_BYTES + CRYPTO_BYTES];
 
 
@@ -50,8 +50,6 @@ public class KEM {
             mu = Utils.random_bytes(DELTA_BYTES);
         else
             Arrays.fill(mu, (byte) 1);
-
-
 
         MessageDigest md = new SHA3_256();
         buf = md.digest(pk);
@@ -64,9 +62,6 @@ public class KEM {
         ctxt = Indcpa.indcpa_enc(pk , mu , buf2);
 
         ss = Verify.cmov(Arrays.copyOfRange(buf2,DELTA_BYTES,buf2.length) , CRYPTO_BYTES , (byte)1);
-
-
-
         return new Encapsulation(ctxt,ss);
     }
 
