@@ -42,4 +42,4 @@ More details about SMAUG and the most secure ways to use it can be found [here](
 The tests from the C reference implementation  ([SMAUG KEM Github](https://github.com/hmchoe0528/SMAUG_public "SMAUG KEM Github")) have been converted to Java. The original test files are used as the main test source. To convert the codes, first the randomly assigned values were assigned as fixed values in the C application. Thus, the same keys were generated in both applications (C and Java). The tests all pass, however please note that the code has not been examined by a third party for potential vulnerabilities.
 
 ## Contact
-ahmetfarukdursun@ktu.edu.tr
+ahmetfaruk.dursun@omu.edu.tr
