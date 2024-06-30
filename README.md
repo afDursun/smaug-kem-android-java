@@ -1,4 +1,10 @@
 # Smaug KEM Android Java
+[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/afDursun/smaug-kem-android-java?include_prereleases)](https://img.shields.io/github/v/release/afDursun/smaug-kem-android-java?include_prereleases)
+[![GitHub last commit](https://img.shields.io/github/last-commit/afDursun/smaug-kem-android-java)](https://img.shields.io/github/last-commit/afDursun/smaug-kem-android-java)
+[![GitHub issues](https://img.shields.io/github/issues-raw/afDursun/smaug-kem-android-java)](https://img.shields.io/github/issues-raw/afDursun/smaug-kem-android-java)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/afDursun/smaug-kem-android-java)](https://img.shields.io/github/issues-pr/afDursun/smaug-kem-android-java)
+[![GitHub](https://img.shields.io/github/license/afDursun/smaug-kem-android-java)](https://img.shields.io/github/license/afDursun/smaug-kem-android-java)
+
 SMAUG is an efficient post-quantum key encapsulation mechanism (KEM), whose security is based on the hardness of the lattice problems, Module-Learning-with-Errors (MLWE) and Module-Learning-with-Roundings (MLWR). SMAUG enjoys a conservative secret key security relying on the MLWE problem and an efficient ephemeral key generation relying its security on the MLWR problem. SMAUG follows the recent approaches in designing the post-quantum-secure KEMs in the Quantum Random Oracle Model (QROM) while maintaining its efficiency [ [see details](https://kpqc.cryptolab.co.kr/smaug "see details") ].
 ## Setup
 **Step 1.** Add the JitPack repository to your build file
